@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - FitLife</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--   *** Home Section Starts ***   -->
+<section class="home" id="home">
+	
+	<!-- <div class="home-overlay"></div> -->
+	<!--   === Main Navbar Starts ===   -->
+	<nav class="main-navbar">
+		<div class="logo">
+			<img src="images/home/logo.png">
+		</div>
+		<ul class="nav-list">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#our_team">Trainers</a></li>
+			<li><a href="#pricing">Prices</a></li>
+			<li><a href="#blog">Blog</a></li>
+		</ul>
+		<a href="login.html" class="join-us-btn-wrapper">
+			<button class="btn join-us-btn">Join Us</button>
+		</a>
+		<div class="hamburger-btn"> 
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</nav>
+		<!--   === Main Navbar Ends ===   -->
+    <header>
+        <h1>About FitLife Gym</h1>
+        <p>Your journey to fitness starts here!</p>
+    </header>
+
+    <div class="mini-nav">
+        <ul>
+            <li><a href="#" onclick="showContent('mission')">Our Mission</a></li>
+            <li><a href="#" onclick="showContent('trainers')">Meet Our Trainers</a></li>
+            <li><a href="#" onclick="showContent('facilities')">Our Facilities</a></li>
+        </ul>
+    </div>
+
+    <section id="content">
+        <div id="mission" class="content-section active">
+            <h2>Our Mission</h2>
+            <img src="mission.jpg" alt="Our Mission" class="mission-img">
+            <p>At FitLife, our mission is to empower individuals to lead healthier and more active lives. We provide world-class fitness training, expert guidance, and a welcoming community to help our members achieve their personal goals.</p>
+            <ul>
+                <li>Promote overall health and wellness</li>
+                <li>Provide state-of-the-art fitness facilities</li>
+                <li>Encourage a supportive and motivating community</li>
+                <li>Offer expert coaching and personalized training programs</li>
+            </ul>
+        </div>
+
+        <div id="trainers" class="content-section">
+            <h2>Meet Our Trainers</h2>
+            <p>Our team consists of highly skilled and certified fitness professionals dedicated to helping you reach your goals. Whether you're looking to lose weight, build muscle, or enhance your athletic performance, our trainers have the expertise to guide you.</p>
+            <ul>
+                <li><strong>John Doe (Head Trainer)</strong> - Strength & Conditioning Specialist</li>
+                <li><strong>Jane Smith (Personal Trainer)</strong> - Certified Nutrition Coach</li>
+                <li><strong>Michael Johnson (Yoga Instructor)</strong> - Expert in Flexibility & Mindfulness</li>
+                <li><strong>Emily Davis (Cardio Coach)</strong> - High-Intensity Interval Training (HIIT) Specialist</li>
+            </ul>
+        </div>
+
+        <div id="facilities" class="content-section">
+            <h2>Our Facilities</h2>
+            <p>At FitLife, we offer a modern and well-equipped environment to ensure an exceptional fitness experience. Our facilities include:</p>
+            <ul>
+                <li>Spacious gym area with the latest strength and cardio equipment</li>
+                <li>Dedicated personal training zones</li>
+                <li>Indoor and outdoor functional training spaces</li>
+                <li>Group fitness studios for yoga, Zumba, and spin classes</li>
+                <li>Luxury locker rooms with showers and saunas</li>
+                <li>Relaxation lounge and juice bar</li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="about.js"></script>
+</body>
+</html>

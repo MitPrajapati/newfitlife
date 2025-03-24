@@ -28,7 +28,7 @@
                 <li><a href="#">Prices</a></li>
                 <li><a href="#">Blog</a></li>
             </ul>
-            <a href="login1.html" class="join-us-btn-wrapper">
+            <a href="login.html" class="join-us-btn-wrapper">
                 <button class="btn join-us-btn">Join Us</button>
             </a>
             <div class="hamburger-btn">
@@ -46,6 +46,7 @@
                             <h2>Welcome Back!</h2>
                             <p>To keep Connected with us please login with your personal info</p>
                             <button class="login-btn">Login Here</button>
+                            <a href="./admin_login.html" Class="admin">Admin</a>
                         </div>
 
                         <div class="registration-form">
@@ -66,21 +67,22 @@
                             </div>
                             <p>or use your emails for registration</p>
 
-
-                            <form action="#">
+                            <form action="User_login_regis.php" method="post">
                                 <div class="input-field">
-                                    <input type="text" name="#" id="username" placeholder="Name" required>
+                                    <input type="text" name="name" id="username" placeholder="Name" required>
                                 </div>
                                 <div class="input-field">
-                                    <input type="Email" name="#" id="email" placeholder="Email" required>
+                                    <input type="email" name="email" id="email" placeholder="Email" required>
                                 </div>
                                 <div class="input-field">
-                                    <input type="password" name="#" id="password" placeholder="password" required>
+                                    <input type="password" name="password" id="password" placeholder="Password" required>
                                 </div>
                                 <div class="input-field">
-                                    <input type="submit" value="Register">
+                                    <input type="submit" name="register" value="Register">
                                 </div>
                             </form>
+                            
+                            
                         </div>
                     </div>
                 </div>
@@ -112,18 +114,20 @@
                             <p>or use your account</p>
 
 
-                            <form action="#">
+                            <form action="User_login_regis.php" method="post">
                                 <div class="input-field">
-                                    <input type="Email" name="#" id="email" placeholder="Email" required>
+                                    <input type="email" name="email" id="email" placeholder="Email" required>
                                 </div>
                                 <div class="input-field">
-                                    <input type="password" name="#" id="password" placeholder="Password" required>
+                                    <input type="password" name="password" id="password" placeholder="Password" required>
                                 </div>
-                                    <p><span>Forgot Password </span><a href="#">Click Here!</a></p>
+                                <p><span>Forgot Password </span><a href="#">Click Here!</a></p>
+                                li
                                 <div class="input-field">
-                                    <input type="submit" value="Login">
+                                    <input type="submit" name="login" value="Login">
                                 </div>
                             </form>
+                            
                         </div>
                     </div>
                 </div>

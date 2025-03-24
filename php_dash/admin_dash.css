@@ -1,0 +1,172 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* === Overall Page Layout === */
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    background: #f4f4f4;
+    display: flex;
+}
+
+/* === Sidebar === */
+.sidebar {
+    width: 270px;
+    height: 100vh;
+    background: #222; /* Dark sidebar */
+    color: white;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+}
+
+.sidebar .logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .logo img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+    background: #ff8800;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+/* Logout Button */
+.logout-btn {
+    width: 100%;
+    padding: 10px;
+    background: #d9534f;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.logout-btn:hover {
+    background: #c9302c;
+}
+
+/* === Main Content === */
+.main-content {
+    margin-left: 270px; /* Adjusted for sidebar */
+    padding: 20px;
+    width: calc(100% - 270px);
+    min-height: 100vh;
+
+    /* Full-screen Background Image */
+    /* background: url('../images/login/bg-login.jpg') no-repeat center center fixed; */
+    /* background-size: cover; 
+    background-position: center;
+    background-attachment: fixed; */
+    /* color: #333; */
+    /* overflow-x: hidden; Prevent horizontal scrolling */
+}
+
+/* === Section Styling === */
+.section {
+    display: none;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.section.active {
+    display: block;
+}
+
+/* === Table Styling === */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background: #ff8800;
+    color: white;
+}
+
+table td {
+    background: white;
+}
+
+/* === Forms & Buttons === */
+input {
+    padding: 8px;
+    margin: 5px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    background: #ff8800;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #cc7000;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+    
+    .main-content {
+        margin-left: 210px;
+        width: calc(100% - 210px);
+    }
+
+    table th, table td {
+        font-size: 12px;
+        padding: 5px;
+    }
+}

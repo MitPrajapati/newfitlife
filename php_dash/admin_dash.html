@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - FitLife</title>
+    <link rel="stylesheet" href="admin_dash.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="../images/home/logo.png" alt="FitLife Logo">
+            </div>
+            <ul>
+                <li><a href="#" data-section="registration">User Registration</a></li>
+                <li><a href="#" data-section="login">User Login</a></li>
+                <li><a href="#" data-section="classes">Classes</a></li>
+                <li><a href="#" data-section="trainers">Trainers</a></li>
+                <li><a href="#" data-section="payment-history">Payment History</a></li>
+            </ul>
+
+            <a href="../login.html"> <button class="logout-btn">Logout</button></a>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- User Registration Section -->
+            <section id="registration" class="section active">
+                <h2>User Registration Details</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Joined Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="registrationTableBody">
+                        <!-- Data will be added dynamically -->
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- User Login Section -->
+            <section id="login" class="section">
+                <h2>User Login Details</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Login ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Joined Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="loginTableBody">
+                        <!-- Data will be added dynamically -->
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Classes Section -->
+           <!-- Classes Section -->
+<section id="classes" class="section">
+    <h2>Classes Schedule</h2>
+
+    <div class="class-form" style="margin-bottom:20px;">
+        <div style="display:inline-block; margin-right:10px;">
+            <input type="text" id="newClassId" placeholder="Class ID" disabled>
+        </div>
+        <div style="display:inline-block; margin-right:10px;">
+            <input type="text" id="newClassName" placeholder="Enter Class Name">
+        </div>
+        <div style="display:inline-block; margin-right:10px;">
+            <select id="newTrainerId" placeholder="Select Trainer">
+                <option value="">Select Trainer</option>
+                <!-- Trainer options will be loaded dynamically -->
+            </select>
+        </div>
+        <div style="display:inline-block; margin-right:10px;">
+            <input type="text" id="newSchedule" placeholder="Enter Schedule">
+        </div>
+        <div style="display:inline-block; margin-right:10px;">
+            <input type="number" id="newDuration" placeholder="Enter Duration (mins)">
+        </div>
+        <div style="display:inline-block; margin-right:10px;">
+            <input type="number" id="newCapacity" placeholder="Enter Capacity">
+        </div>
+        <div style="display:inline-block; margin-right:10px;">
+            <input type="text" id="newLocation" placeholder="Enter Location">
+        </div>
+        <div style="display:inline-block; margin-right:10px;">
+            <select id="newStatus" placeholder="Select Status">
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+            </select>
+        </div>
+        <div style="display:inline-block; margin-right:10px;">
+            <input type="datetime-local" id="newCreatedAt" placeholder="Select Date & Time">
+        </div>
+        <button id="addClassBtn">Add Class</button>
+    </div>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Class ID</th>
+                <th>Class Name</th>
+                <th>Trainer Name</th>
+                <th>Schedule</th>
+                <th>Duration</th>
+                <th>Capacity</th>
+                <th>Location</th>
+                <th>Status</th>
+                <th>Created At</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="classTableBody">
+            <!-- Data will be added dynamically -->
+        </tbody>
+    </table>
+</section>
+
+
+
+            <!-- Trainers Section -->
+            <section id="trainers" class="section">
+                <h2>Trainer Management</h2>
+                <input type="text" id="newTrainerId" placeholder="Trainer ID">
+                <input type="text" id="newTrainerName" placeholder="Trainer Name">
+                <input type="email" id="newTrainerName" placeholder="Email">
+                <input type="text" id="newTrainerSpecialty" placeholder="Expertise">
+                <input type="datetime-local" id="newTrainerSpecialty" placeholder="Created_at">
+                <button id="addTrainerBtn">Add Trainer</button>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Expertise</th>
+                            <th>Created_at</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="trainerTableBody">
+                        <!-- Data will be added dynamically -->
+                    </tbody>
+                </table>
+            </section>
+
+          
+
+            <!-- Payment History Section -->
+            <section id="payment-history" class="section">
+                <h2>Payment History</h2>
+
+                <!-- Input Fields -->
+                <input type="text" id="newPaymentId" placeholder="Payment ID" disabled>
+                <input type="text" id="newName" placeholder="Name">
+                <input type="text" id="newEmail" placeholder="Email">
+
+                <!-- Plan Selection -->
+                <select id="newPlan">
+                    <option value="" disabled selected>Choose Plan</option>
+                    <option value="Silver" data-amount="999">Silver</option>
+                    <option value="Gold" data-amount="1999">Gold</option>
+                    <option value="Platinum" data-amount="3999">Platinum</option>
+                </select>
+
+                <!-- Readonly Amount Field -->
+                <input type="text" id="newAmount" placeholder="Amount" disabled>
+                <input type="date" id="newPaymentDate">
+
+                <!-- Add Payment Button -->
+                <button id="addPaymentBtn">Add Payment</button>
+
+                <!-- Payment History Table -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Payment ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Plan</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="paymentTableBody">
+                        <!-- Data will be added dynamically -->
+                    </tbody>
+                </table>
+            </section>
+
+
+        </main>
+    </div>
+
+    <script src="admin_dash.js"></script>
+</body>
+
+</html>
