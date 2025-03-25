@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <td>${item.location}</td>
                 <td>${item.status}</td>
                 <td>${item.created_at ?? "N/A"}</td>
-                <td><button class="delete-btn" data-id="${item.id}">Remove</button></td>
+                <td><button class="delete-btn" data-id="${item.id}">🗑️Remove</button></td>
             `;
             tableBody.appendChild(row);
         });

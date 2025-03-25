@@ -3,89 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - FitLife</title>
+    <title>About Us</title>
     <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--   *** Home Section Starts ***   -->
-<section class="home" id="home">
-	
-	<!-- <div class="home-overlay"></div> -->
-	<!--   === Main Navbar Starts ===   -->
-	<nav class="main-navbar">
-		<div class="logo">
-			<img src="images/home/logo.png">
-		</div>
-		<ul class="nav-list">
-			<li><a href="#home">Home</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#services">Services</a></li>
-			<li><a href="#our_team">Trainers</a></li>
-			<li><a href="#pricing">Prices</a></li>
-			<li><a href="#blog">Blog</a></li>
-		</ul>
-		<a href="login.html" class="join-us-btn-wrapper">
-			<button class="btn join-us-btn">Join Us</button>
-		</a>
-		<div class="hamburger-btn"> 
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-	</nav>
-		<!--   === Main Navbar Ends ===   -->
-    <header>
-        <h1>About FitLife Gym</h1>
-        <p>Your journey to fitness starts here!</p>
-    </header>
-
-    <div class="mini-nav">
-        <ul>
-            <li><a href="#" onclick="showContent('mission')">Our Mission</a></li>
-            <li><a href="#" onclick="showContent('trainers')">Meet Our Trainers</a></li>
-            <li><a href="#" onclick="showContent('facilities')">Our Facilities</a></li>
+    <!-- Navbar Section (Kept the Same) -->
+     <!-- Navbar Section -->
+     <nav class="main-navbar">
+        <div class="logo">
+            <img src="images/home/logo.png" alt="Logo">
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="trainers.html">Trainers</a></li>
+            <li><a href="pricing.html">Prices</a></li>
+            <li><a href="blog.html">Blog</a></li>
         </ul>
-    </div>
-
-    <section id="content">
-        <div id="mission" class="content-section active">
-            <h2>Our Mission</h2>
-            <img src="mission.jpg" alt="Our Mission" class="mission-img">
-            <p>At FitLife, our mission is to empower individuals to lead healthier and more active lives. We provide world-class fitness training, expert guidance, and a welcoming community to help our members achieve their personal goals.</p>
-            <ul>
-                <li>Promote overall health and wellness</li>
-                <li>Provide state-of-the-art fitness facilities</li>
-                <li>Encourage a supportive and motivating community</li>
-                <li>Offer expert coaching and personalized training programs</li>
-            </ul>
+        <a href="login.html" class="join-us-btn-wrapper">
+            <button class="btn join-us-btn">Join Us</button>
+        </a>
+    </nav>
+    
+    
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h1>About <span>Us</span></h1>
+                <p>Welcome to our fitness community! We are dedicated to helping individuals achieve their health and fitness goals through expert guidance, state-of-the-art facilities, and personalized training programs.</p>
+                <p>Our mission is to inspire a healthier lifestyle by providing top-tier services, professional trainers, and a supportive environment for everyone, from beginners to athletes.</p>
+                <a href="#services" class="learn-more-btn">Learn More</a>
+            </div>
+            <div class="about-image">
+                <img src="images/team/img2.jpg" alt="Our Team">
+            </div>
         </div>
-
-        <div id="trainers" class="content-section">
-            <h2>Meet Our Trainers</h2>
-            <p>Our team consists of highly skilled and certified fitness professionals dedicated to helping you reach your goals. Whether you're looking to lose weight, build muscle, or enhance your athletic performance, our trainers have the expertise to guide you.</p>
-            <ul>
-                <li><strong>John Doe (Head Trainer)</strong> - Strength & Conditioning Specialist</li>
-                <li><strong>Jane Smith (Personal Trainer)</strong> - Certified Nutrition Coach</li>
-                <li><strong>Michael Johnson (Yoga Instructor)</strong> - Expert in Flexibility & Mindfulness</li>
-                <li><strong>Emily Davis (Cardio Coach)</strong> - High-Intensity Interval Training (HIIT) Specialist</li>
-            </ul>
-        </div>
-
-        <div id="facilities" class="content-section">
-            <h2>Our Facilities</h2>
-            <p>At FitLife, we offer a modern and well-equipped environment to ensure an exceptional fitness experience. Our facilities include:</p>
-            <ul>
-                <li>Spacious gym area with the latest strength and cardio equipment</li>
-                <li>Dedicated personal training zones</li>
-                <li>Indoor and outdoor functional training spaces</li>
-                <li>Group fitness studios for yoga, Zumba, and spin classes</li>
-                <li>Luxury locker rooms with showers and saunas</li>
-                <li>Relaxation lounge and juice bar</li>
-            </ul>
+    
+        <!-- Additional About Sections -->
+        <div class="about-extra">
+            <div class="about-box best-value">
+                <img src="images/about/image1.png" alt="Personal Training">
+                <h2>Personalized Training Programs</h2>
+                <p>Our certified trainers create customized workout plans tailored to your fitness level and goals, ensuring maximum results.</p>
+            </div>
+            
+            <div class="about-box best-value">
+                <img src="images/about/image2.png" alt="Group Fitness">
+                <h2>Energetic Group Fitness Classes</h2>
+                <p>Join our high-energy group classes, including yoga, HIIT, and strength training, led by expert instructors to keep you motivated.</p>
+            </div>
+    
+            <div class="about-box best-value">
+                <img src="images/about/image3.png" alt="Nutrition Guidance">
+                <h2>Expert Nutrition and Wellness Guidance</h2>
+                <p>Our team provides personalized meal plans and expert nutrition advice to support your fitness journey and overall well-being.</p>
+            </div>
+    
+            <div class="about-box best-value">
+                <img src="images/about/image4.png" alt="Recovery Zone">
+                <h2>Relaxing Recovery and Wellness Zone</h2>
+                <p>Unwind in our dedicated recovery zone, equipped with massage therapy, sauna, and stretching areas to help your muscles recover faster.</p>
+            </div>
+            <div class="about-box best-value">
+                <img src="images/about/image5.png" alt="Strength Training">
+                <h2>Strength Training Zone</h2>
+                <p>Build muscle and increase strength with our dedicated strength training area, equipped with free weights, machines, and squat racks.</p>
+            </div>
+            
+            <div class="about-box best-value">
+                <img src="images/about/image6.png" alt="Cardio Area">
+                <h2>Cardio Workout Area</h2>
+                <p>Boost endurance and burn calories in our cardio section, featuring treadmills, ellipticals, cycling machines, and rowing stations.</p>
+            </div>
+            
+            <div class="about-box best-value">
+                <img src="images/about/image7.png" alt="Functional Training">
+                <h2>Functional Training & CrossFit</h2>
+                <p>Take your fitness to the next level with our functional training area, equipped with battle ropes, kettlebells, and agility equipment.</p>
+            </div>
+            <div class="about-box best-value">
+                <img src="images/about/image8.png" alt="Sauna & Wellness">
+                <h2>Sauna & Wellness Center</h2>
+                <p>Relax and recover in our sauna and wellness center, designed to improve circulation, reduce muscle soreness, and promote relaxation.</p>
+            </div>
         </div>
     </section>
-
-    <script src="about.js"></script>
+    <script type="text/javascript" src="script.js">
+        
+    </script>
 </body>
 </html>
